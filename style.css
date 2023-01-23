@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#container {
+  background-image: url("./asset/cosmic-background-alien-planet-deserted-landscape-with-mountains_107791-6400.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+
+#game,
+h2 {
+  margin-top: 2%;
+}
+
+#game,
+h1,
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+#start {
+  background-color: #ddd;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  transition: 0.18s;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#start:hover {
+  border: 2px solid #232323;
+}
+
+#name-player {
+  padding-top: 5%;
+  padding-left: 4%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+
+#gameBoard {
+  background-color: #232323;
+  color: #232323;
+  display: grid;
+  grid-template-columns: 13rem 13rem 13rem;
+  grid-template-rows: 13rem 13rem 13rem;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 40rem;
+}
+
+#gameBoard span {
+  background-color: #ddd;
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+}
+
+#gameBoard span.win {
+  background-color: #25a340;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  #name-player {
+    padding-left: 1%;
+  }
+
+  #gameBoard {
+    grid-template-columns: 11rem 11rem 11rem;
+    grid-template-rows: 11rem 11rem 11rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #name-player {
+    padding-left: 3%;
+  }
+
+  #gameBoard {
+    grid-template-columns: 12rem 12rem 12rem;
+    grid-template-rows: 12rem 12rem 12rem;
+  }
+}
+
+@media (max-width: 425px) {
+  #name-player {
+    padding-left: 3%;
+    flex-wrap: wrap;
+    padding-bottom: 15%;
+  }
+
+  #gameBoard {
+    grid-template-columns: 8rem 8rem 8rem;
+    grid-template-rows: 8rem 8rem 8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  #name-player {
+    padding-right: 28%;
+    padding-left: 18%;
+    flex-wrap: wrap;
+    padding-bottom: 25%;
+  }
+
+  #gameBoard {
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+  }
+}
+
+@media (max-width: 325px) {
+  #name-player {
+    padding-right: 23%;
+    padding-left: 14%;
+    flex-wrap: wrap;
+    padding-bottom: 25%;
+  }
+
+  #gameBoard {
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+  }
+}
